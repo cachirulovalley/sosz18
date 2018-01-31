@@ -27,7 +27,7 @@ $(function(){
 	})
 
 	$('.countdown').downCount({
-                    date: '05/17/2015 9:00:00',
+                    date: '03/17/2018 9:00:00',
                     offset: +10
                 }, function() {
 

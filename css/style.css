@@ -38,7 +38,7 @@ h1{
 	font-size: 72px;
 	font-size: 5.9vw;
 	position: absolute;
-	top: 18%;
+	top: 8%;
 	width: 100%;
 	text-align: center;
 }
@@ -137,6 +137,10 @@ form input[type="text"] {
 	-ms-transition: border-color 0.5s;
 }
 
+input::placeholder {
+	color: #fff !important;
+}
+
 form input[type="text"]:focus{
 	background: rgba(255,255,255, 0.3);
 }
@@ -167,7 +171,7 @@ form input[type="submit"]:hover {
 ul.social{
 	position: absolute;
 	width: 100%;
-	bottom: 50px;
+	bottom: 15%;
 	text-align: center;
 }
 
@@ -217,7 +221,11 @@ ul.social > li > a:hover .icon-dribbble-1{
 	text-align: center;
 	bottom: 10px;
 	width: 100%;
-	color: #fff;
+	color: rgb(138, 137, 137);
+}
+
+.copyright p a {
+	color: #F47797;
 }
 
 @media screen and (max-width: 500px){
