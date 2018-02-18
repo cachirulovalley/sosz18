@@ -1708,3 +1708,12 @@ img {
     color: #000; }
     .event-sponsors-block p a {
       color: #00FF00; }
+
+.event-location-block {
+  background: #FFF !important;
+  padding: 0; }
+  .event-location-block .location-box h2,
+  .event-location-block .location-box .location {
+    color: #000; }
+  .event-location-block .location-box a {
+    color: #FF0081; }
