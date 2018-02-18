@@ -1,5 +1,5 @@
 $magenta: #FF0081;
-$green: #00FF49;
+$green: #00FF00;
 $black: #000;
 $white: #FFF;
 
@@ -11,12 +11,14 @@ body{
     line-height: 22px;
 }
 
+img{
+    max-width: 100%;
+}
 .flex-row{
     display: flex;
 }
 
 .section{
-    background: yellow;
     padding: 80px;
 }
 .section-wrapper{
@@ -27,5 +29,9 @@ body{
     margin: auto;
     .col-half{
         flex-basis: calc(50% - 20px);
+    }
+
+    @media only screen and (max-width : 940px){
+        display: block;
     }
 }

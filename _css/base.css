@@ -1480,13 +1480,15 @@ body {
   font-size: 16px;
   line-height: 22px; }
 
+img {
+  max-width: 100%; }
+
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .section {
-  background: yellow;
   padding: 80px; }
 
 .section-wrapper {
@@ -1504,6 +1506,9 @@ body {
   .section-wrapper .col-half {
     -ms-flex-preferred-size: calc(50% - 20px);
     flex-basis: calc(50% - 20px); }
+  @media only screen and (max-width: 940px) {
+    .section-wrapper {
+      display: block; } }
 
 .banner {
   background: #FF0081 url(../img/bg-image.png) repeat;
@@ -1527,7 +1532,7 @@ body {
     margin: 50px auto; }
 
 .banner-hashtag {
-  color: #00FF49;
+  color: #00FF00;
   font-size: 20px; }
 
 .banner-header {
@@ -1544,7 +1549,7 @@ body {
 .banner-buttons {
   text-align: center; }
   .banner-buttons .button {
-    background: #00FF49;
+    background: #00FF00;
     color: #000;
     display: inline-block;
     font-size: 24px;
@@ -1563,10 +1568,10 @@ body {
 .banner-countdown li span {
   font-size: 72px;
   font-weight: 600;
-  color: #00FF49; }
+  color: #00FF00; }
 
 .banner-countdown li p {
-  color: #00FF49;
+  color: #00FF00;
   font-size: 20px;
   font-weight: 600; }
 
@@ -1606,7 +1611,7 @@ body {
 .introduction-block {
   background: #000; }
   .introduction-block h2 {
-    color: #00FF49;
+    color: #00FF00;
     text-transform: uppercase;
     margin-bottom: 1em; }
   .introduction-block h3 {
@@ -1629,7 +1634,7 @@ body {
   background: #FF0081;
   margin-top: -10px; }
   .schedule-block h2 {
-    color: #00FF49;
+    color: #00FF00;
     font-size: 32px;
     margin-bottom: 0; }
   .schedule-block .event-schedule-title,
@@ -1651,5 +1656,38 @@ body {
     width: 7.5em !important;
     text-align: center; }
   .schedule-block .panel-body {
-    color: #00FF49;
+    color: #00FF00;
     text-align: center; }
+
+.promotional-block {
+  background: #00FF00; }
+  .promotional-block .section-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+    .promotional-block .section-header h2 {
+      color: #FF0081; }
+  .promotional-block .col > * {
+    color: #000; }
+  .promotional-block .col {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    .promotional-block .col h3 {
+      font-size: 32px;
+      margin-bottom: 40px; }
+    .promotional-block .col h4 {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 20px; }
+    .promotional-block .col .button {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 24px;
+      text-align: center;
+      background: #FFF;
+      border-radius: 0;
+      padding: 1.2rem; }
+    .promotional-block .col:first-child {
+      text-align: center;
+      margin-bottom: 40px; }
