@@ -1,0 +1,14 @@
+$magenta: #FF0081;
+$green: #00FF49;
+$black: #000;
+$white: #FFF;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+body{
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.flex-row{
+    display: flex;
+}
