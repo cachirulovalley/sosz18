@@ -1615,6 +1615,15 @@ body {
   .introduction-block h3,
   .introduction-block p {
     color: #FFF; }
+  @media only screen and (max-width: 940px) {
+    .introduction-block .section-wrapper {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      display: block; }
+    .introduction-block .col {
+      margin-bottom: 40px; }
+      .introduction-block .col:last-child {
+        margin-bottom: 0; } }
 
 .schedule-block {
   background: #FF0081;
