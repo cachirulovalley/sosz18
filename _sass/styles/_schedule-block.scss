@@ -1,0 +1,41 @@
+.schedule-block{
+    background: $magenta;
+    margin-top: -10px;
+
+    h2{
+        color: $green;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    .event-schedule-title,
+    .panel-body{
+        border-radius: 0 !important;
+        background: $black;
+        >*{
+            color: $magenta;
+        }
+    }
+
+    .event-schedule-title{
+        padding: 0;
+    }
+
+    .event-schedule-title>*{
+        font-size: 24px;
+        font-weight: 400;
+        padding: 15px 10px;
+    }
+
+    .event-schedule-time{
+        background: $white;
+        border-radius: 0;
+        width: 7.5em !important;
+        text-align: center;
+    }
+    .panel-body{
+        color: $green;
+        text-align: center;
+    }
+
+}

@@ -1615,3 +1615,32 @@ body {
   .introduction-block h3,
   .introduction-block p {
     color: #FFF; }
+
+.schedule-block {
+  background: #FF0081;
+  margin-top: -10px; }
+  .schedule-block h2 {
+    color: #00FF49;
+    font-size: 32px;
+    margin-bottom: 0; }
+  .schedule-block .event-schedule-title,
+  .schedule-block .panel-body {
+    border-radius: 0 !important;
+    background: #000; }
+    .schedule-block .event-schedule-title > *,
+    .schedule-block .panel-body > * {
+      color: #FF0081; }
+  .schedule-block .event-schedule-title {
+    padding: 0; }
+  .schedule-block .event-schedule-title > * {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 15px 10px; }
+  .schedule-block .event-schedule-time {
+    background: #FFF;
+    border-radius: 0;
+    width: 7.5em !important;
+    text-align: center; }
+  .schedule-block .panel-body {
+    color: #00FF49;
+    text-align: center; }
