@@ -1717,3 +1717,53 @@ img {
     color: #000; }
   .event-location-block .location-box a {
     color: #FF0081; }
+
+.faqs-block {
+  background: #000; }
+  .faqs-block .header-section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF0081;
+    margin-bottom: 40px; }
+  .faqs-block > * {
+    color: #FFF; }
+  .faqs-block h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 26px; }
+  .faqs-block a {
+    color: #FF0081; }
+  .faqs-block p {
+    font-size: 20px;
+    line-height: 26px; }
+
+.footer-top-block {
+  background: #FF0081; }
+  .footer-top-block .section-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer-top-block h3 {
+    color: #00FF00;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .footer-top-block p {
+    color: #FFF;
+    font-size: 26px;
+    line-height: 34px; }
+    .footer-top-block p.footer-text {
+      margin-bottom: 40px; }
+  .footer-top-block a {
+    color: #00FF00;
+    font-weight: 300; }
+  .footer-top-block .footer-link {
+    margin-bottom: 0; }
+
+.footer-copyright-block {
+  background: #00FF00;
+  text-align: center;
+  padding: 20px;
+  color: #000; }
+  .footer-copyright-block p {
+    margin-bottom: 0; }
