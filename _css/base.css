@@ -1476,12 +1476,34 @@ html input[disabled] {
     content: " (" attr(title) ")"; } }
 
 body {
-  font-family: "Montserrat", Arial, sans-serif; }
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px; }
 
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.section {
+  background: yellow;
+  padding: 80px; }
+
+.section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 1168px;
+  margin: auto; }
+  .section-wrapper .col-half {
+    -ms-flex-preferred-size: calc(50% - 20px);
+    flex-basis: calc(50% - 20px); }
 
 .banner {
   background: #FF0081 url(../img/bg-image.png) repeat;
@@ -1580,3 +1602,16 @@ body {
     line-height: 3.6vw;
     padding-left: 6vw;
     padding-right: 6vw; } }
+
+.introduction-block {
+  background: #000; }
+  .introduction-block h2 {
+    color: #00FF49;
+    text-transform: uppercase;
+    margin-bottom: 1em; }
+  .introduction-block h3 {
+    font-size: 22px;
+    margin-bottom: 1em; }
+  .introduction-block h3,
+  .introduction-block p {
+    color: #FFF; }

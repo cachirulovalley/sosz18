@@ -7,8 +7,25 @@ $white: #FFF;
 
 body{
     font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .flex-row{
     display: flex;
+}
+
+.section{
+    background: yellow;
+    padding: 80px;
+}
+.section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1168px;
+    margin: auto;
+    .col-half{
+        flex-basis: calc(50% - 20px);
+    }
 }

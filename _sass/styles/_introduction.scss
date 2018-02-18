@@ -1,0 +1,18 @@
+.introduction-block{
+    background: $black;
+
+    h2{
+        color: $green;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+    h3{
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    h3,
+    p{
+        color: $white;
+    }
+}
