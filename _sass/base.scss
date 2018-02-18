@@ -26,100 +26,97 @@
   @import "base/_print";
 }
 
+$magenta: #FF0081;
+$green: #00FF49;
+$black: #000;
+$white: #FFF;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+body{
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.flex-row{
+    display: flex;
+}
+
 // Banner
 .banner {
-  background: url(../img/bg-image.jpg) 50% 50% no-repeat;
-  background-size: cover;
+  background: $magenta url(../img/bg-image.png) repeat;
+  background-size: 100%;
   color: $white;
-  background-color: #777;
-  background-blend-mode: multiply;
+  background-color: $magenta;
+  padding: 84px 60px 0 60px;
+
+  .flex-row{
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  .flex-row,
+  .banner-countdown,
+  .banner-buttons{
+      max-width: 1168px;
+      margin: auto;
+  }
+  .banner-countdown{
+      margin: 50px auto;
+  }
+}
+
+.banner-hashtag{
+    color: $green;
+    font-size: 20px;
 }
 
 .banner-header {
-  color: #fd3267;
-  font-size: 72px;
-  font-size: 7vw;
-  line-height: 7vw;
-  position: absolute;
-  top: 8%;
-  width: 100%;
-  text-align: center;
+    $size: 120px;
+    color: $black;
+    font-size: $size;
+    line-height: $size * 0.9;
+    font-weight: 600;
 }
 
 .banner-subheader {
   font-weight: 500;
   font-size: 27px;
-  margin: 0 auto;
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
+  color: $white;
 }
 
 .banner-buttons {
-  position: absolute;
-  top: 70%;
-  text-align: center;
-  padding: 0;
-  margin-bottom: 0;
-  width: 100%;
-
+    text-align: center;
   .button {
-    background: #fd3267;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    @include breakpoint(m) {
-      display: inline-block;
-      margin: 0 10px;
-    }
+    background: $green;
+    color: $black;
+    display: inline-block;
+    font-size: 24px;
+    padding: 20px 100px;
+    border-radius: 0;
   }
 }
 
-.banner-image {
-  max-width: 100%;
-  max-height: 250px;
-}
 
 .banner-countdown {
-	position: absolute;
-	top: 50%;
 	text-align: center;
-	padding: 0;
-	margin-bottom: 0;
-	width: 100%;
+    padding: 0;
+    list-style: none;
 }
 
 .banner-countdown li {
 	display: inline-block;
-	margin-right: 3%;
-	text-align: center;
+    margin: 0 2%;
 }
 
 .banner-countdown li span {
 	font-size: 72px;
-	font-size: 5.8vw;
-	width: 150px;
-	letter-spacing: 5px;
-	font-weight: 300;
-	color: #fff;
+    font-weight: 600;
+	color: $green;
 }
 
 .banner-countdown li p {
-	color: #fd3267;
-	font-size: 14px;
-	margin-bottom: 0;
-}
-
-.banner-countdown li:last-child {
-	margin-right: 0;
-}
-
-.sosz18color {
-  color: #fd3267;
+	color: $green;
+	font-size: 20px;
+    font-weight: 600;
 }
 
 .carousel-indicators > li {
@@ -129,6 +126,49 @@
 .carousel-indicators > li.active {
   background-color: #fd3267 !important;
 }
+
+@media only screen and (max-width : 1140px){
+    .banner{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .banner-header{
+        $size: 10vw;
+        font-size: $size;
+        line-height: $size * 0.9;
+    }
+    .banner-logo img{
+        width: 30vw;
+    }
+    .banner-hashtag{
+        $size: 2vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+    }
+    .banner-subheader{
+        $size: 2.6vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+    }
+    .banner-countdown li span{
+        $size: 7vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+    }
+    .banner-countdown li p{
+        $size: 2vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+    }
+    .banner-buttons .button{
+        $size: 3vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+        padding-left: $size * 2;
+        padding-right: $size * 2;
+    }
+}
+
 
 .footer-link {
   color: black;
