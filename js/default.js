@@ -7,22 +7,7 @@ WebFont.load({
   }
 });
 
-function setHeight(){
-  var documentHeight = $(window).height();
-  if(documentHeight > 500){
-    $('.banner').height(documentHeight);
-  }
-}
-
-$(window).resize(function(){
-  setHeight();
-})
-
 $(document).ready(function(){
-
-  // Dynamic height main banner
-  setHeight();
-
   // Map
   var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>'
@@ -35,19 +20,9 @@ $(document).ready(function(){
   L.marker([41.659472,-0.907274]).addTo(map);
   map.addLayer(layer);
 
-  // Swipe Controls for Carousel
-  $('.carousel').swiperight(function() {
-    $(this).carousel('prev');
-  });
-  $('.carousel').swipeleft(function() {
-    $(this).carousel('next');
-  });
-
   // Countdown
   $('.banner-countdown').downCount({
     date: '03/17/2018 9:00:00',
     offset: +10
   });
 });
-
-
