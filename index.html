@@ -287,7 +287,8 @@ title: Startup Open Space Zaragoza 2018 - #sosz18
 
 
   <ul class="event-speakers clear">
-    {% for member in site.data.members %}
+    {% random site.data.members randomized_members%}
+    {% for member in randomized_members %}
     <li class="col-6-m col-3-l">
       <div class="col-12-m no-float">
         {% if member.Twitter %}
