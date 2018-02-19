@@ -285,9 +285,8 @@ title: Startup Open Space Zaragoza 2018 - #sosz18
     </p>
   </div>
 
-
   <ul class="event-speakers clear">
-    {% random site.data.members randomized_members%}
+    {% assign randomized_members = site.data.members | sample:site.data.members.size %}
     {% for member in randomized_members %}
     <li class="col-6-m col-3-l">
       <div class="col-12-m no-float">
