@@ -277,58 +277,59 @@ title: Startup Open Space Zaragoza 2018 - #sosz18
 </div>
 
 
-<div class="speakers-block pad-top-60 pad-bottom-60 container" id="members">
-  <div class="text-center pad-top-20">
-    <h2 class="h2 uppercase sosz18color">¿Quién viene?</h2>
-    <p class="fs-4">
-      Vamos a ir actualizando la lista de asistentes para que vayas conociendo al resto de personas del evento
-    </p>
-  </div>
+<div class="speakers-block section" id="members">
+    <header class="header-section">
+        <h2>¿Quién viene?</h2>
+        <p>Vamos a ir actualizando la lista de asistentes para que vayas conociendo al resto de personas del evento</p>
+    </header>
 
-  <ul class="event-speakers clear">
-    {% assign randomized_members = site.data.members | sample:site.data.members.size %}
-    {% for member in randomized_members %}
-    <li class="col-6-m col-3-l">
-      <div class="col-12-m no-float">
-        {% if member.Twitter %}
-          <a class="event-speaker" href="https://twitter.com/{{member.Twitter}}">
-            <img width="100%" class="block" src="https://twitter.com/{{member.Twitter}}/profile_image?size=bigger" alt="{{ member.Nombre }}">
-          </a>
-        {% else %}
-        <a class="event-speaker" href="#">
-          <img width="100%" class="block" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" alt="{{ member.Nombre }}">
-        </a>
-        {% endif %}
-        <h3 class="fs-4 pad-top-20">{{ member.Nombre }}</h3>
-        <p><a href="https://twitter.com/{{member.Twitter}}" target="blank">{{member.Twitter}}</a></p>
-        <p class="uppercase">
-          {{ member.Startup }}
-        </p>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+    <section class="event-speakers">
+        {% assign randomized_members = site.data.members | sample:site.data.members.size %}
+        {% for member in randomized_members %}
+            <article class="speaker">
+                <div class="speaker-wrapper">
+                    {% if member.Twitter %}
+                        <a class="speaker-avatar" href="https://twitter.com/{{member.Twitter}}">
+                            <img width="100%" src="https://twitter.com/{{member.Twitter}}/profile_image?size=bigger" alt="{{ member.Nombre }}">
+                        </a>
+                    {% else %}
+                        <a class="event-speaker" href="#">
+                            <img width="100%" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" alt="{{ member.Nombre }}">
+                        </a>
+                    {% endif %}
+                    <h3 class="speaker-name">{{ member.Nombre }}</h3>
+                    <p class="speaker-twitter">
+                        <a href="https://twitter.com/{{member.Twitter}}" target="blank">{{member.Twitter}}</a>
+                    </p>
+                    <p class="speaker-company">
+                        {{ member.Startup }}
+                    </p>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+</div><!-- /speakers-block -->
 
-    <div class="footer-top-block section">
-        <div class="section-wrapper">
-            <div class="col col-half">
-                <h3>Propón sesiones</h3>
-                <p class="footer-text">Si tienes una idea o inquietud para una sesión puedes proponerla desde ya en el Slack del evento y recibir feedback. Visita <a class="footer-link" href="https://soszslack.herokuapp.com/">sosz18 en Slack</a>.</p>
-                <p><a class="footer-link" href="https://twitter.com/cachirulovalley">@cachirulovalley</a></p>
-                <p><a class="footer-link" href="https://twitter.com/search?f=tweets&vertical=default&q=sosz18">#sosz18 en Twitter</a></p>
-            </div>
 
-            <div class="col col-half">
-                <img src="/img/capsull.jpg" alt="Capsull">
-            </div>
-
+<div class="footer-top-block section">
+    <div class="section-wrapper">
+        <div class="col col-half">
+            <h3>Propón sesiones</h3>
+            <p class="footer-text">Si tienes una idea o inquietud para una sesión puedes proponerla desde ya en el Slack del evento y recibir feedback. Visita <a class="footer-link" href="https://soszslack.herokuapp.com/">sosz18 en Slack</a>.</p>
+            <p><a class="footer-link" href="https://twitter.com/cachirulovalley">@cachirulovalley</a></p>
+            <p><a class="footer-link" href="https://twitter.com/search?f=tweets&vertical=default&q=sosz18">#sosz18 en Twitter</a></p>
         </div>
-    </div><!-- / footer-top-block -->
 
-    <div class="footer-copyright-block">
-        <p>Cachirulo Valley</p>
-    </div><!-- / footer-copyright-block -->
+        <div class="col col-half">
+            <img src="/img/capsull.jpg" alt="Capsull">
+        </div>
+
+    </div>
+</div><!-- / footer-top-block -->
+
+<div class="footer-copyright-block">
+    <p>Cachirulo Valley</p>
+</div><!-- / footer-copyright-block -->
 
 
 
