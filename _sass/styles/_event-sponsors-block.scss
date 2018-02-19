@@ -1,0 +1,24 @@
+.event-sponsors-block{
+    text-align: center;
+
+    .header-section h2{
+        color: $magenta;
+        text-transform: uppercase;
+    }
+
+    .sponsor{
+        text-indent: -9999px;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    p{
+        color: $black;
+
+        a{
+            color: $green;
+        }
+    }
+}

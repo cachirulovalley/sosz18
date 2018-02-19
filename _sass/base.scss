@@ -26,110 +26,12 @@
   @import "base/_print";
 }
 
-// Banner
-.banner {
-  background: url(../img/bg-image.jpg) 50% 50% no-repeat;
-  background-size: cover;
-  color: $white;
-  background-color: #777;
-  background-blend-mode: multiply;
-}
-
-.banner-header {
-  color: #fd3267;
-  font-size: 72px;
-  font-size: 7vw;
-  line-height: 7vw;
-  position: absolute;
-  top: 8%;
-  width: 100%;
-  text-align: center;
-}
-
-.banner-subheader {
-  font-weight: 500;
-  font-size: 27px;
-  margin: 0 auto;
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-}
-
-.banner-buttons {
-  position: absolute;
-  top: 70%;
-  text-align: center;
-  padding: 0;
-  margin-bottom: 0;
-  width: 100%;
-
-  .button {
-    background: #fd3267;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    @include breakpoint(m) {
-      display: inline-block;
-      margin: 0 10px;
-    }
-  }
-}
-
-.banner-image {
-  max-width: 100%;
-  max-height: 250px;
-}
-
-.banner-countdown {
-	position: absolute;
-	top: 50%;
-	text-align: center;
-	padding: 0;
-	margin-bottom: 0;
-	width: 100%;
-}
-
-.banner-countdown li {
-	display: inline-block;
-	margin-right: 3%;
-	text-align: center;
-}
-
-.banner-countdown li span {
-	font-size: 72px;
-	font-size: 5.8vw;
-	width: 150px;
-	letter-spacing: 5px;
-	font-weight: 300;
-	color: #fff;
-}
-
-.banner-countdown li p {
-	color: #fd3267;
-	font-size: 14px;
-	margin-bottom: 0;
-}
-
-.banner-countdown li:last-child {
-	margin-right: 0;
-}
-
-.sosz18color {
-  color: #fd3267;
-}
-
-.carousel-indicators > li {
-  border: 2px solid #fd3267 !important;
-}
-
-.carousel-indicators > li.active {
-  background-color: #fd3267 !important;
-}
-
-.footer-link {
-  color: black;
-}
+@import "styles/vars-and-colors.scss";
+@import "styles/banner.scss";
+@import "styles/introduction.scss";
+@import "styles/schedule-block.scss";
+@import "styles/promotional-block.scss";
+@import "styles/event-sponsors-block.scss";
+@import "styles/event-location-block.scss";
+@import "styles/faqs-block.scss";
+@import "styles/footer-block.scss";

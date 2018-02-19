@@ -1,0 +1,37 @@
+$magenta: #FF0081;
+$green: #00FF00;
+$black: #000;
+$white: #FFF;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+body{
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+img{
+    max-width: 100%;
+}
+.flex-row{
+    display: flex;
+}
+
+.section{
+    padding: 80px;
+}
+.section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1168px;
+    margin: auto;
+    .col-half{
+        flex-basis: calc(50% - 20px);
+    }
+
+    @media only screen and (max-width : 940px){
+        display: block;
+    }
+}
