@@ -1510,12 +1510,16 @@ img {
     .section-wrapper {
       display: block; } }
 
+.main-section {
+  max-width: 1168px;
+  margin: auto; }
+
 .banner {
   background: #FF0081 url(../img/bg-image.png) repeat;
   background-size: 100%;
   color: #FFF;
   background-color: #FF0081;
-  padding: 84px 60px 0 60px; }
+  padding: 84px 60px 60px 60px; }
   .banner .flex-row {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
