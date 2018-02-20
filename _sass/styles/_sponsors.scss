@@ -16,6 +16,9 @@
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 20px;
+  a{
+      cursor: pointer;
+  }
   @include breakpoint(l) {
     margin-bottom: 0;
   }
