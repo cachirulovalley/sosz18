@@ -1732,6 +1732,7 @@ img {
   .faqs-block > * {
     color: #FFF; }
   .faqs-block h3 {
+    color: #FFF !important;
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 26px; }
@@ -1771,6 +1772,9 @@ img {
   color: #000; }
   .footer-copyright-block p {
     margin-bottom: 0; }
+  .footer-copyright-block a {
+    color: #FF0081;
+    font-weight: 400; }
 
 .speakers-block .header-section {
   text-align: center; }
@@ -1802,7 +1806,7 @@ img {
     align-items: stretch;
     text-align: center; }
     .event-speakers .speaker img {
-      border: 15px solid #000; }
+      border: 10px solid #000; }
   .event-speakers .speaker-name,
   .event-speakers .speaker-twitter,
   .event-speakers .speaker-company {
@@ -1818,3 +1822,21 @@ img {
   .event-speakers .speaker-company {
     color: #000;
     font-weight: 100; }
+
+.hotels-and-travel {
+  text-align: center;
+  background: #00FF00; }
+  .hotels-and-travel h2 {
+    color: #FF0081;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .hotels-and-travel a {
+    color: #FF0081; }
+  .hotels-and-travel h3, .hotels-and-travel p {
+    color: #000;
+    font-size: 20px; }
+  .hotels-and-travel h3 {
+    font-size: 23px;
+    margin-bottom: 20px; }
+  .hotels-and-travel .note {
+    margin-top: 40px; }

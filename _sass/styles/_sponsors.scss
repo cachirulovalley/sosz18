@@ -16,11 +16,9 @@
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 20px;
+  background-size: 100%;
   a{
       cursor: pointer;
-  }
-  @include breakpoint(l) {
-    margin-bottom: 0;
   }
 }
 .sponsor-telsome {
@@ -87,6 +85,10 @@
 .sponsor-deiser {
   width: 143px;
   background-image: url(../img/logos/deiser.png);
+}
+.sponsor-manfred {
+  width: 143px;
+  background-image: url(../img/logos/manfred.png);
 }
 
 @media (max-width: 480px) {
